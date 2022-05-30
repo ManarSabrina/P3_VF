@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH MY FOOD</title>
+
+    <!-- NORMALIZE.CSS -->
+    <link rel="stylesheet" href="../style/normalize.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../main.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <!-- ICON : FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/8168970f7e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- MODIF -->
+    
+    <div class="chargement">
+        <div class="chargement__cercle">
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__nav__img" src="../assets/logo.png" alt="logo">
+        </nav>
+    </header>
+
+    <main>
+        <div class="recherche">
+            <form class="recherche__form" method="post" action="#">
+                <!--<i class="fas fa-map-marker-alt recherche__form__icon"></i>-->
+                <input class="recherche__form__input" type="search" value="Paris, Belleville">
+            </form>
+        </div>
+
+        <section class="presentation">
+            <h1 class="presentation__titre">Réservez le menu qui<br>vous convient</h1>
+            <p class="presentation__paragraphe">Découvrez des restaurants d'exception,<br>séléctionnés par nos soins.</p>
+            <a  class="presentation__btn" href="#">Explorer nos restaurants</a>
+
+        </section>
+
+        <section class="fonctionnement">
+            <h2 class="fonctionnement__titre">Fonctionnement</h2>
+            <ol class="fonctionnement__consigne">
+                <li class="fonctionnement__consigne__bloc"> 
+                    <div class="fonctionnement__consigne__bloc__container">
+                        <i class="fas fa-mobile-alt
+                        fonctionnement__consigne__bloc__container__icon"></i> 
+                        <span class="fonctionnement__consigne__bloc__container__titre"> Choisissez un restaurant</span>
+                    </div>
+                </li>
+                <li class="fonctionnement__consigne__bloc"> 
+                    <div class="fonctionnement__consigne__bloc__container">
+                        <i class="fas fa-list-ul fonctionnement__consigne__bloc__container__icon"></i>
+                        <span class="fonctionnement__consigne__bloc__container__titre"> Composez votre menu</span>
+                    </div> 
+
+                </li>
+                <li class="fonctionnement__consigne__bloc"> 
+                    <div class="fonctionnement__consigne__bloc__container">
+                        <i class="fas fa-store fonctionnement__consigne__bloc__container__icon"></i>
+                        <span class="fonctionnement__consigne__bloc__container__titre"> Dégustez au restaurant</span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="restaurants">
+            <h2 class="restaurants__titre">Restaurants</h2>
+            <div class="restaurants__bloc">
+                <a href="../pages/menu-1.html" class="restaurants__bloc__a">
+                    <div class="restaurants__bloc__a__carte">
+                        <img class="restaurants__bloc__a__carte__img" src="../assets/la-palette-du-gout.jpg" alt="la-palette-du-gout">
+                        <div class="restaurants__bloc__a__carte__nouveau">Nouveau</div>
+                        <div class="restaurants__bloc__a__carte__bas">
+                            <div class="restaurants__bloc__a__carte__bas__texte">
+                                <h3 class="restaurants__bloc__a__carte__bas__texte__titre">La palette du goûl</h3>
+                                <p class="restaurants__bloc__a__carte__bas__texte__paragraphe">Ménilmontant</p>
+                            </div>
+                            <i class="fal fa-heart restaurants__bloc__a__carte__bas__icon">
+                                <!--<i class="fas fa-heart restaurants__bloc__a__carte__bas__icon__interieur"></i>-->
+                            </i>
+                            
+                        </div>
+                    </div>
+                </a>
+                <a href="../pages/menu-2.html" class="restaurants__bloc__a">
+                    <div class="restaurants__bloc__a__carte">
+                        <img class="restaurants__bloc__a__carte__img" src="../assets/la-note-enchantee.jpg" alt="la-note-enchantee">
+                        <div class="restaurants__bloc__a__carte__nouveau">Nouveau</div>
+                        <div class="restaurants__bloc__a__carte__bas">
+                            <div class="restaurants__bloc__a__carte__bas__texte">
+                                <h3 class="restaurants__bloc__a__carte__bas__texte__titre">La note enchantée</h3>
+                                <p class="restaurants__bloc__a__carte__bas__texte__paragraphe">Charonne</p>
+                            </div>
+                            <i class="fal fa-heart restaurants__bloc__a__carte__bas__icon"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="../pages/menu-3.html" class="restaurants__bloc__a">
+                    <div class="restaurants__bloc__a__carte">
+                        <img class="restaurants__bloc__a__carte__img" src="../assets/a-la-francaise.jpg" alt="a-la-francaise">
+                        <div class="restaurants__bloc__a__carte__bas">
+                            <div class="restaurants__bloc__a__carte__bas__texte">
+                                <h3 class="restaurants__bloc__a__carte__bas__texte__titre">À la française</h3>
+                                <p class="restaurants__bloc__a__carte__bas__texte__paragraphe">Cité Rouge</p>
+                            </div>
+                            <i class="fal fa-heart restaurants__bloc__a__carte__bas__icon"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="../pages/menu-4.html" class="restaurants__bloc__a">
+                    <div class="restaurants__bloc__a__carte">
+                        <img class="restaurants__bloc__a__carte__img" src="../assets/le-delice-des-sens.jpg" alt="le-delice-des-sens">
+                        <div class="restaurants__bloc__a__carte__bas">
+                            <div class="restaurants__bloc__a__carte__bas__texte">
+                                <h3 class="restaurants__bloc__a__carte__bas__texte__titre">Le délice des sens</h3>
+                                <p class="restaurants__bloc__a__carte__bas__texte__paragraphe">Folie-Méricourt</p>
+                            </div>
+                            <i class="fal fa-heart restaurants__bloc__a__carte__bas__icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <h4 class="footer__titre">ohmyfood</h4>
+
+        <div class="footer__texte">
+            <ul class="footer__texte__ul">
+                <li class="footer__texte__ul__li">
+                    <i class="fa-solid fa-utensils footer__texte__ul__li__icon"></i> 
+                    <span class=" footer__texte__ul__li__span"> Proposer un restaurant</span> 
+                </li>
+                <li class="footer__texte__ul__li">
+                    <i class="fas fa-hands-helping footer__texte__ul__li__icon footer__texte__ul__li__icon--petit"></i><span class="footer__texte__ul__li__span">Devenir partenaire</span>
+                </li>
+                <li class="footer__texte__ul__li">Mentions légales</li>
+                <li class="footer__texte__ul__li">Contact</li>
+            </ul>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

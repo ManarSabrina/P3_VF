@@ -1,0 +1,25 @@
+.menu {
+    height: 1493px; /**/
+    &__container {
+        height: 1272px; /**/
+        &__cadre {
+            margin: 37px 12px 72px; /**/
+            &__repas {
+                &__h2--plats {
+                    margin-top: 50px; /**/  
+                }
+                &__plat {
+                    &--quatre { /**/
+                        height: 315px;
+                    }
+                    &__box__texte__nometprix__nom {
+                        width: 85%; /**/
+                    }
+                }
+            }
+            &__btn {
+                margin-top: 50px; /**/
+            }
+        }
+    }
+}
