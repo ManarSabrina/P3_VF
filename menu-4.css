@@ -1,0 +1,28 @@
+.menu {
+  height: 1417px;
+  /**/
+}
+.menu__container {
+  height: 1196px;
+  /**/
+}
+.menu__container__cadre {
+  margin: 37px 12px 65px;
+  /**/
+}
+.menu__container__cadre__repas__h2--plats {
+  margin-top: 37px;
+  /**/
+}
+.menu__container__cadre__repas__plat--grand {
+  height: 255px;
+}
+.menu__container__cadre__repas__plat__box--grand {
+  height: 90px;
+}
+.menu__container__cadre__btn {
+  margin-top: 50px;
+  /**/
+}
+
+/*# sourceMappingURL=menu-4.css.map */

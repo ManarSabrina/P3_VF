@@ -45,27 +45,6 @@ $color-n : #328264;
     100%{ opacity: 1; z-index: 10;}
 }
 
-@keyframes translate-left {
-    0% { padding-right: 0; }
-    100% { padding-right: 25px; }
-}
-
-@keyframes translate-right {
-    0% { width: 0; }
-    100% { width: 25px; }
-}
-
-@keyframes rotate-icon {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/*
-animation: translate-left 1s linear; 
-animation: translate-right 1s linear;  
-animation: rotate-icon 1s linear;
-*/
-
 
 
 
@@ -140,7 +119,6 @@ main {
     background-color: white;
     display: flex;
     @include fd-c;
-    z-index: -10;
 }
 
 .recherche /* MODIF */ {
@@ -441,7 +419,9 @@ main {
                             position: absolute;
                             top: 0px;
                             left: 0px;
-                            color: linear-gradient(to bottom, $secondaire, $primaire);
+                            background-image: linear-gradient(to bottom, $secondaire, $primaire);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
                             z-index: -1;
                             opacity: 0;
                             transition: opacity 250ms linear;
