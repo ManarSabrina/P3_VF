@@ -5,7 +5,7 @@
 }
  
 
-$primaire: #9356DC;
+$primaire: red;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 /* AC */
@@ -392,6 +392,68 @@ main {
             }
             &__span {
                 margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 992px ) {
+    .presentation {
+        &__paragraphe__br {
+            display: none;
+        }
+    }
+
+    .fonctionnement {
+   
+        &__titre {
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            @include jc-ai-c;
+        }
+        &__consigne {
+            margin: auto;
+            width: 50%;
+            &__bloc {
+                margin: auto;
+                width: 55%;
+                &__container {
+                    display: flex;
+                    @include jc-ai-c;
+                    
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        &__titre {
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            @include jc-ai-c;
+        }
+        &__bloc {
+            margin: auto;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width : 1750px ) {
+    .fonctionnement {
+        &__consigne {
+            width: 50%;
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            &__bloc {
+                width: 30%;
+                
             }
         }
     }
