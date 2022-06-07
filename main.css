@@ -62,7 +62,7 @@ body {
   height: 120px;
   border: 8px solid #eeeeee;
   border-radius: 50%;
-  border-top-color: #9356DC;
+  border-top-color: red;
   border-bottom-color: #FF79DA;
   animation: spin 3s linear;
   z-index: -12;
@@ -142,7 +142,7 @@ main {
   margin: 0 0 30px;
 }
 .presentation__btn {
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, red);
   color: white;
   box-shadow: 2px 5px 9px #CACACB;
   text-decoration: none;
@@ -168,7 +168,7 @@ main {
   left: 0;
   border-radius: 30px;
   background: radial-gradient();
-  background: linear-gradient(to bottom, #ff93e1, #a16be0);
+  background: linear-gradient(to bottom, #ff93e1, #ff1a1a);
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -213,11 +213,11 @@ main {
   background-color: #F4EDFE;
 }
 .fonctionnement__consigne__bloc:hover .fonctionnement__consigne__bloc__container__icon {
-  color: #9356DC;
+  color: red;
 }
 .fonctionnement__consigne__bloc::before {
   content: counter(my-awesome-counter);
-  background-color: #9356DC;
+  background-color: red;
   padding: 6px 9px;
   border-radius: 100%;
   color: white;
@@ -334,7 +334,7 @@ main {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, red);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
