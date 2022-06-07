@@ -386,4 +386,18 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 1110px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu__container {
+    width: 65%;
+  }
+  .menu__container__cadre__repas {
+    /*display: flex;
+    flex-direction: row;*/
+  }
+}
+
 /*# sourceMappingURL=menu.css.map */

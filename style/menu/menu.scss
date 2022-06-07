@@ -356,3 +356,17 @@ body {
     }
 }
 
+@media screen and (min-width : 1110px ) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        &__container {
+            width: 65%;
+            &__cadre__repas {
+                /*display: flex;
+                flex-direction: row;*/
+                
+            }
+        }
+    }
+}
