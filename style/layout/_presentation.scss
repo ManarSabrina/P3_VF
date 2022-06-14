@@ -55,3 +55,11 @@
         }
     }
 }
+
+@media screen and (min-width : 1110px ) {
+    .presentation {
+        &__paragraphe__br {
+            display: none;
+        }
+    }
+}

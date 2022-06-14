@@ -1,27 +1,4 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Shrikhand', cursive;
-    font-family: 'Roboto', sans-serif;
-}
-
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
-
-@mixin jc-ai-c {
-    justify-content: center;
-    align-items: center; 
-}
-
-@mixin jc-sb-ai-c {
-    justify-content: space-between;
-    align-items: center; 
-}
-
-@mixin fd-c {
-    flex-direction: column;
-}
-
+/* ANIMATION */
 
 @keyframes translate-right {
     0%{ width: 0%; }
@@ -33,16 +10,6 @@ $tertiaire: #99E2D0;
     100%{ width: 0%; }
 }
 
-/*@keyframes translate-left {
-    0%{ width: 100%; }
-    100%{ width: 80%; }
-}
-
-@keyframes translate-left-retour {
-    0%{ width: 80%; }
-    100%{ width: 100%; }
-}*/
-
 @keyframes rotate-icon {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -53,18 +20,11 @@ $tertiaire: #99E2D0;
     100% { z-index: 3; opacity: 1; transform: translateY(0px);}
 }
 
-/*@keyframes menu-apparition {
-    0%{ opacity: 0; margin-top: 40px; }
-    100% { opacity: 1; margin-top: 0; }
 
-}*/
+/* CODE */
 
 body {
-    width: 100%;
-    display: flex;
-    @include fd-c;
     justify-content: flex-start;
-    align-items: center;
     margin: 0;
 }
 
@@ -103,8 +63,6 @@ body {
         }
     }
 }
-
-
 
 .menu {
     width: 100%;
@@ -325,40 +283,8 @@ body {
     }
 }
 
-.footer {
-    height: 197px;
-    width: 100%;
-    background-color: #353535;
-    padding: 23px;
-    &__titre {
-        color: white;
-        font-family: 'Shrikhand', cursive;
-        margin: 0 0 20px 0;
-    }
-    &__texte__ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 95px;
-        &__li {
-            list-style-type: none;
-            color: white;
-            &__icon {
-                color: white;
-                font-family: FontAwesome;
-                font-style: normal;
-                &--petit {
-                    font-size: 13px;    
-                }
-            }
-            &__span {
-                margin-left: 10px;
-            }
-        }
-    }
-}
+
+/* RESPONSIVE */
 
 @media screen and (min-width : 550px ) {
     .menu__container__cadre { 
@@ -401,6 +327,102 @@ body {
                 &__repas__plat {
                     width: 95%;
                 }
+            }
+        }
+    }
+}
+
+
+/*  menu 1 */
+menu {
+    height: 1380px; /**/
+    &__container {
+        height: 1160px; /**/
+        &__cadre {
+            margin: 37px 12px 58px; /**/
+            &__repas {
+                &__h2--plats {
+                        margin-top: 37px; /**/  
+                }
+                &__plat__box__texte__nometprix__nom {
+                    width: 84%; /**/
+                }
+            }
+            &__btn {
+                margin-top: 45px; /**/
+            }
+        }
+    }
+}
+
+/*  menu 2 */
+.menu {
+    height: 1493px; /**/
+    &__container {
+        height: 1272px; /**/
+        &__cadre {
+            margin: 37px 12px 72px; /**/
+            &__repas {
+                &__h2--plats {
+                    margin-top: 50px; /**/  
+                }
+                &__plat {
+                    &--quatre { /**/
+                        height: 315px;
+                    }
+                    &__box__texte__nometprix__nom {
+                        width: 85%; /**/
+                    }
+                }
+            }
+            &__btn {
+                margin-top: 50px; /**/
+            }
+        }
+    }
+}
+
+/*  menu 3 */
+.menu {
+    height: 1417px; /**/
+    &__container {
+        height: 1196px; /**/
+        &__cadre {
+            margin: 37px 12px 83px; /**/
+            &__repas {
+                &__h2--plats {
+                    margin-top: 43px; /**/  
+                }
+            }
+            &__btn {
+                margin-top: 50px; /**/
+            }
+        }
+    }
+}
+
+/*  menu 4 */
+.menu {
+    height: 1417px; /**/
+    &__container {
+        height: 1196px; /**/
+        &__cadre {
+            margin: 37px 12px 65px; /**/
+            &__repas {
+                &__h2--plats {
+                    margin-top: 37px; /**/  
+                }
+                &__plat {
+                    &--grand {
+                    height: 255px; 
+                    }
+                    &__box--grand {  
+                        height: 90px;
+                    }
+                }
+            }
+            &__btn {
+                margin-top: 50px; /**/
             }
         }
     }
