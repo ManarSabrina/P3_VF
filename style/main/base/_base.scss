@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    @include fd-c;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    @include fd-c;
+}

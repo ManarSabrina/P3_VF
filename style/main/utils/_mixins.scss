@@ -1,0 +1,13 @@
+@mixin jc-ai-c {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin jc-sb-ai-c {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin fd-c {
+    flex-direction: column;
+}

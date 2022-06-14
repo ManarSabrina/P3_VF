@@ -1,0 +1,103 @@
+.restaurants {
+    background-color: $quaternaire;
+    height: 1225px;
+    &__titre {
+        margin: 50px 0 30px 20px;
+    }
+    &__bloc {
+        display: flex;
+        @include fd-c;
+        @include jc-sb-ai-c;
+        height: 1060px;
+        margin: 0 20px;
+        &__a {
+            text-decoration: none;
+            color: black;
+            height: 250px;
+            width: 100%;
+            &__carte {
+                background-color: white;
+                border-radius: 15px;
+                position: relative;
+                width: 100%;
+                height: 250px;
+                box-shadow: 3px 4px 7px #EFEFEF;
+                &__img {
+                    object-fit: cover;
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                    height: 173px;
+                }
+                &__nouveau {
+                    position: absolute;
+                    display: flex;
+                    @include jc-ai-c;
+                    right: 15px;
+                    top: 13px;
+                    background-color: $tertiaire;
+                    color: $color-n;
+                    z-index: 5;
+                    height: 30px;
+                    width: 80px;
+                    border-radius: 2px; /* MODIF */
+                }
+                &__bas {
+                    display: flex;
+                    @include jc-sb-ai-c;
+                    width: 94%; 
+                    &__texte {
+                        margin: 15px 0 0 12px;
+                        &__titre {
+                            margin: 0 0 3px 0;
+                            font-size: 19px;
+                            font-weight: 600;
+                        }
+                        &__paragraphe {
+                            margin: 0;
+                            font-size: 17px;
+                            font-weight: 200;
+                        }
+                    }
+                    &__icon {
+                        font-family: FontAwesome;
+                        font-style: normal;
+                        font-size: 25px;
+                        font-weight: 100;
+                        position: relative;
+                        color: black;
+                        &:hover {
+                            color: transparent;
+                            &::after {
+                                opacity: 1;
+                                z-index: 10;
+                            }
+                        }
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            content: "\f004";
+                            font-weight: 900;
+                            font-size: 25px;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background: linear-gradient(to bottom, $secondaire, $primaire);
+                            background-clip: border-box;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            z-index: -1;
+                            opacity: 0;
+                            transition: opacity 250ms linear;
+                            /*transition-property: opacity;
+                            transition-duration: 250ms;
+                            transition-timing-function: linear;*/
+                            /* PK CA NE MARCHE PAS */
+                        }  
+                    }
+                }
+                
+            }
+
+        }
+        
+    }
+}

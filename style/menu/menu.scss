@@ -123,7 +123,8 @@ body {
         &__cadre {
             display: flex;
             flex-direction: column;
-            width: 93%;
+            width: 93%; 
+            margin: 37px 12px 58px;
             &__haut {
                 display: flex;
                 @include jc-sb-ai-c;
@@ -164,159 +165,162 @@ body {
                     }  
                 }
             }
-            &__repas {
-                &__h2 {
-                    font-size: 16px;
-                    font-weight: 300;
-                    margin: 35px 0 6px 7px;
-                    &--desserts {
-                        margin-top: 47px;
+            &__cont {
+                &__repas {
+                    &__h2 {
+                        font-size: 16px;
+                        font-weight: 300;
+                        margin: 35px 0 6px 7px;
+                        &--desserts {
+                            margin-top: 47px;
+                        }
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 42px;
+                            background-color: $tertiaire;
+                            height: 3px;
+                            margin: 6px 0 15px;
+                        }  
                     }
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 42px;
-                        background-color: $tertiaire;
-                        height: 3px;
-                        margin: 6px 0 15px;
-                    }  
-                }
-                &__plat {
-                    display: flex;
-                    flex-direction: column;
-                    @include jc-sb-ai-c;
-                    height: 235px; 
-                    &__box {
+                    &__plat {
                         display: flex;
+                        flex-direction: column;
                         @include jc-sb-ai-c;
-                        height: 70px;
-                        width: 100%;
-                        background-color: white;
-                        border-radius: 15px; /* MODIF */
-                        box-shadow: 5px 5px 5px #9c9c9c; /* MODIF */
-                        position: relative;
-                        overflow: hidden;
-                        &:hover > &__texte {
-                            animation: translate-left-aller 1s linear; 
-                        }
-                        &:not(:hover) > &__texte {
-                            animation: translate-left-retour 1s linear ; 
-                            /* OU translate-left-aller 1s linear reverse; NON ?*/
-                        }
-                        &:hover > &__anim {
-                            animation: translate-right 1s linear; 
-                            animation-fill-mode: forwards;
-                        }
-                        &:not(:hover) > &__anim {
-                            animation: translate-right-retour 1s linear; 
-                            animation-fill-mode: forwards;
-                            /*animation: translate-left 1s linear; 
-                            animation-fill-mode: forwards;*/
-                            
-                        }
-                        &:hover &__anim__icon {
-                            animation: rotate-icon 1s linear; 
-                            animation-fill-mode: forwards;
-                        }
-                        @for $i from 1 to 11 {
-                            &-#{$i} {
-                                animation-delay: $i * 1s;
-                                animation: apparition-box $i * 1s;
-                            }  
-                        }
-                        &__texte {
+                        height: 235px; 
+                        &__box {
                             display: flex;
-                            @include fd-c;
-                            justify-content:    space-between;
-                            align-items: flex-start;
-                            margin: 13px 20px 12px  10px;
-                            width: 92%;
-                            height: 42px;
-                            
-                            &__h3 {
-                                margin: 0;
-                                font-weight: 500;
-                                font-size: 18px;
-                                /*width: 50px;*/
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow:  ellipsis;
+                            @include jc-sb-ai-c;
+                            height: 70px;
+                            width: 100%;
+                            background-color: white;
+                            border-radius: 15px; /* MODIF */
+                            box-shadow: 5px 5px 5px #9c9c9c; /* MODIF */
+                            position: relative;
+                            overflow: hidden;
+                            &:hover > &__texte {
+                                animation: translate-left-aller 1s linear; 
                             }
-                            &__nometprix {
-                                margin-top: 5px;
+                            &:not(:hover) > &__texte {
+                                animation: translate-left-retour 1s linear ; 
+                                /* OU translate-left-aller 1s linear reverse; NON ?*/
+                            }
+                            &:hover > &__anim {
+                                animation: translate-right 1s linear; 
+                                animation-fill-mode: forwards;
+                            }
+                            &:not(:hover) > &__anim {
+                                animation: translate-right-retour 1s linear; 
+                                animation-fill-mode: forwards; 
+                                /*animation: translate-left 1s linear; 
+                                animation-fill-mode: forwards;*/
+                                
+                            }
+                            &:hover &__anim__icon {
+                                animation: rotate-icon 1s linear; 
+                                animation-fill-mode: forwards;
+                            }
+                            @for $i from 1 to 11 {
+                                &-#{$i} {
+                                    animation-delay: $i * 1s;
+                                    animation: apparition-box $i * 1s;
+                                }  
+                            }
+                            &__texte {
                                 display: flex;
-                                @include jc-sb-ai-c;
-                                width: 100%;
-                                &__nom {
+                                @include fd-c;
+                                justify-content:    space-between;
+                                align-items: flex-start;
+                                margin: 13px 20px 12px  10px;
+                                width: 92%;
+                                height: 42px;
+                                
+                                &__h3 {
                                     margin: 0;
-                                    font-weight: 300;
-                                    font-size: 15px;
-                                    white-space:    nowrap;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    /*width: 50px;*/
+                                    white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow:  ellipsis;
                                 }
-                                &__prix {
-                                    margin: 0;
-                                    font-weight: 500;
-                                    font-size: 15px;
+                                &__nometprix {
+                                    margin-top: 5px;
+                                    display: flex;
+                                    @include jc-sb-ai-c;
+                                    width: 100%;
+                                    &__nom {
+                                        margin: 0;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        white-space:    nowrap;
+                                        overflow: hidden;
+                                        text-overflow:  ellipsis;
+                                    }
+                                    &__prix {
+                                        margin: 0;
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                    }
                                 }
                             }
-                        }
-                        &__anim {
-                            background-color: $tertiaire;
-                            height: 100%;
-                            width: 0%;
-                            display: flex;
-                            @include jc-ai-c;
-                            &__icon {
-                                color: white;
-                                font-size: 25px;
+                            &__anim {
+                                background-color: $tertiaire;
+                                height: 100%;
+                                width: 0%;
+                                display: flex;
+                                @include jc-ai-c;
+                                &__icon {
+                                    color: white;
+                                    font-size: 25px;
+                                }
                             }
                         }
                     }
                 }
             }
             &__btn {
-                display: flex;
-                @include jc-ai-c;
-                text-decoration: none;
-                color: black;
-                background: linear-gradient(to bottom, $secondaire, $primaire);
-                color: white;
-                box-shadow: 3px 6px 10px #B9BABA;
-                text-decoration: none;
-                border-radius: 30px;
-                font-size: 17px;
-                font-weight: 500;
-                padding: 15px 45px;
-                width: 53%;
-                height: 50px;
-                margin: auto;
-                position: relative;
-                z-index: 1;
-                &:hover {
-                    box-shadow: 4px 7px 11px #9c9c9c;
-                    &::after {
-                        opacity: 1;
-                    }
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
+                    display: flex;
+                    @include jc-ai-c;
+                    text-decoration: none;
+                    color: black;
+                    background: linear-gradient(to bottom, $secondaire, $primaire);
+                    color: white;
+                    box-shadow: 3px 6px 10px #B9BABA;
+                    text-decoration: none;
                     border-radius: 30px;
-                    background: linear-gradient(
-                    to bottom,
-                    lighten($secondaire, 5),
-                    lighten($primaire, 5));
-                    opacity: 0;
-                    z-index: -1;
-                    transition: opacity 250ms;
-                }
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding: 15px 45px;
+                    width: 53%;
+                    height: 50px;
+                    margin: auto;
+                    position: relative;
+                    z-index: 1;
+                    &:hover {
+                        box-shadow: 4px 7px 11px #9c9c9c;
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        border-radius: 30px;
+                        background: linear-gradient(
+                        to bottom,
+                        lighten($secondaire, 5),
+                        lighten($primaire, 5));
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 250ms;
+                    }
             }
+            
         }
     }
 }
@@ -356,16 +360,47 @@ body {
     }
 }
 
+@media screen and (min-width : 550px ) {
+    .menu__container__cadre { 
+        margin: auto ; /* NE MARCHE PAS !*/ 
+        /*&__haut {
+            margin: auto;
+        }
+        &__cont {
+            margin: auto;
+            width: 100%; 
+        }*/
+    }
+}
+
 @media screen and (min-width : 1110px ) {
     .menu {
         display: flex;
         justify-content: center;
         &__container {
             width: 65%;
-            &__cadre__repas {
-                /*display: flex;
-                flex-direction: row;*/
-                
+        }
+    }
+}
+
+@media screen and (min-width : 1610px ) {
+    .main {
+        height: 700px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        &__container {
+            /*height: auto; */  /* NE MARCHE PAS !*/
+            &__cadre__cont { 
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;   
+                &__repas__plat {
+                    width: 95%;
+                }
             }
         }
     }

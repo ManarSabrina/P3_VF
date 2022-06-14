@@ -1,0 +1,26 @@
+.recherche /* MODIF */ {
+    height: 50px;
+    width: 100%;
+    background-color: $color-rech;
+    display: flex;
+    @include jc-ai-c;
+    &__form { /* MAX WIDTH*/
+        display: flex;
+        @include jc-sb-ai-c;
+        width: 37%;
+        max-width: 170px;
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f3c5";
+            font-weight: 900;
+            font-size: 20px;
+        }
+        &__input {
+            width: 100%;
+            height: 17px;
+            border: none;
+            background-color: $color-rech;
+            text-align: center;
+        }
+    }
+}

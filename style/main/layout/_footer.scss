@@ -1,0 +1,35 @@
+
+.footer {
+    height: 197px;
+    width: 100%;
+    background-color: #353535;
+    padding: 23px;
+    &__titre {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        margin: 0 0 20px 0;
+    }
+    &__texte__ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95px;
+        &__li {
+            list-style-type: none;
+            color: white;
+            &__icon {
+                color: white;
+                font-family: FontAwesome;
+                font-style: normal;
+                &--petit {
+                    font-size: 13px;    
+                }
+            }
+            &__span {
+                margin-left: 10px;
+            }
+        }
+    }
+}

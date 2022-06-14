@@ -1,0 +1,69 @@
+.fonctionnement {
+    height: 440px;
+    margin: 0 20px;
+    &__titre {
+        margin: 50px 0 30px;
+    }
+    &__consigne {
+        display: flex;
+        @include fd-c;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 270px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        counter-reset: my-awesome-counter;
+        list-style: none;
+        position: relative;
+        &__bloc {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 97%;
+            background-color: $quaternaire;
+            box-shadow: 2px 5px 10px #e7e6e9;
+            border-radius: 25px;
+            height: 75px;
+            position: relative;
+            counter-increment: my-awesome-counter;
+            &:hover {
+                background-color: #F4EDFE;
+            }
+            &:hover > &__container {
+                background-color: #F4EDFE;
+            }
+            &:hover &__container__icon {
+                color: $primaire;
+            }
+            &::before {
+                content: counter(my-awesome-counter);
+                background-color: $primaire;
+                padding: 6px 9px;
+                border-radius: 100%;
+                color: white;
+                font-size: 11px;
+                position: absolute;
+                top: 26px;
+                left: -10px;
+            }
+            &__container {
+                margin-left: 0px;
+                &__icon {
+                    font-size: 18px;
+                    margin: 0 25px 0 35px;
+                    color: #696969; 
+                    margin-right: 15px;
+                    font-family: FontAwesome;
+                    font-style: normal;
+                }
+                &__texte {
+                    font-size: 16px;
+                    font-weight: 500;
+                } 
+            }
+            
+        }
+            
+    }
+}
