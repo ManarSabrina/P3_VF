@@ -1,20 +1,20 @@
 /* IMPORT */
 
-@use './utils/variables';
-@use './utils/mixins';
-@use './utils/animations';
+@import './utils/variables';
+@import './utils/mixins'; 
+@import './utils/animations';
+
+@import './base/base';
+
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/presentation';
+@import './layout/fonctionnement';
+@import './layout/restaurants';
+@import './layout/footer';
+
+@import './components/loader';
+
+@import './pages/menu.scss';
 
 @import './vendors/_normalize.css';
-
-@use './base/base';
-
-@use './layout/header';
-@use './layout/navigation';
-@use './layout/presentation';
-@use './layout/fonctionnement';
-@use './layout/restaurants';
-@use './layout/footer';
-
-@use './components/loader';
-
-@use './pages/menu.scss';
