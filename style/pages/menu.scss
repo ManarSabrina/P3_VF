@@ -1,3 +1,6 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
 /* ANIMATION */
 
 @keyframes translate-right {
@@ -333,27 +336,7 @@ body {
 }
 
 
-/*  menu 1 */
-menu {
-    height: 1380px; /**/
-    &__container {
-        height: 1160px; /**/
-        &__cadre {
-            margin: 37px 12px 58px; /**/
-            &__repas {
-                &__h2--plats {
-                        margin-top: 37px; /**/  
-                }
-                &__plat__box__texte__nometprix__nom {
-                    width: 84%; /**/
-                }
-            }
-            &__btn {
-                margin-top: 45px; /**/
-            }
-        }
-    }
-}
+
 
 /*  menu 2 */
 .menu {
@@ -426,4 +409,4 @@ menu {
             }
         }
     }
-}
+} 

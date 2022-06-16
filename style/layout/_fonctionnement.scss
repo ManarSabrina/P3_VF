@@ -1,3 +1,6 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
 .fonctionnement {
     height: 440px;
     margin: 0 20px;

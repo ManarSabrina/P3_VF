@@ -1,3 +1,7 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/animations' as *;
+
 .chargement {
     display: flex;
     position: fixed;
