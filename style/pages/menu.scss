@@ -68,6 +68,7 @@ body {
 }
 
 .menu {
+    background-color: red;
     width: 100%;
     position: relative;
     &__img {
@@ -164,7 +165,6 @@ body {
                             }
                             &:not(:hover) > &__texte {
                                 animation: translate-left-retour 1s linear ; 
-                                /* OU translate-left-aller 1s linear reverse; NON ?*/
                             }
                             &:hover > &__anim {
                                 animation: translate-right 1s linear; 
@@ -172,9 +172,7 @@ body {
                             }
                             &:not(:hover) > &__anim {
                                 animation: translate-right-retour 1s linear; 
-                                animation-fill-mode: forwards; 
-                                /*animation: translate-left 1s linear; 
-                                animation-fill-mode: forwards;*/
+                                animation-fill-mode: forwards;
                                 
                             }
                             &:hover &__anim__icon {

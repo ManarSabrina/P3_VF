@@ -884,6 +884,7 @@ body {
 }
 
 .menu {
+  background-color: red;
   width: 100%;
   position: relative;
 }
@@ -988,7 +989,6 @@ body {
 }
 .menu__container__cadre__cont__repas__plat__box:not(:hover) > .menu__container__cadre__cont__repas__plat__box__texte {
   animation: translate-left-retour 1s linear;
-  /* OU translate-left-aller 1s linear reverse; NON ?*/
 }
 .menu__container__cadre__cont__repas__plat__box:hover > .menu__container__cadre__cont__repas__plat__box__anim {
   animation: translate-right 1s linear;
@@ -997,8 +997,6 @@ body {
 .menu__container__cadre__cont__repas__plat__box:not(:hover) > .menu__container__cadre__cont__repas__plat__box__anim {
   animation: translate-right-retour 1s linear;
   animation-fill-mode: forwards;
-  /*animation: translate-left 1s linear; 
-  animation-fill-mode: forwards;*/
 }
 .menu__container__cadre__cont__repas__plat__box:hover .menu__container__cadre__cont__repas__plat__box__anim__icon {
   animation: rotate-icon 1s linear;
@@ -1208,81 +1206,81 @@ body {
 }
 
 /*  menu 2 */
-.menu {
+.menu.la-note-enchantee {
   height: 1493px;
   /**/
 }
-.menu__container {
+.menu.la-note-enchantee .menu__container {
   height: 1272px;
   /**/
 }
-.menu__container__cadre {
+.menu.la-note-enchantee .menu__container__cadre {
   margin: 37px 12px 72px;
   /**/
 }
-.menu__container__cadre__repas__h2--plats {
+.menu.la-note-enchantee .menu__container__cadre__repas__h2--plats {
   margin-top: 50px;
   /**/
 }
-.menu__container__cadre__repas__plat--quatre {
+.menu.la-note-enchantee .menu__container__cadre__repas__plat--quatre {
   /**/
   height: 315px;
 }
-.menu__container__cadre__repas__plat__box__texte__nometprix__nom {
+.menu.la-note-enchantee .menu__container__cadre__repas__plat__box__texte__nometprix__nom {
   width: 85%;
   /**/
 }
-.menu__container__cadre__btn {
+.menu.la-note-enchantee .menu__container__cadre__btn {
   margin-top: 50px;
   /**/
 }
 
 /*  menu 3 */
-.menu {
+.menu.a-la-francaise {
   height: 1417px;
   /**/
 }
-.menu__container {
+.menu.a-la-francaise .menu__container {
   height: 1196px;
   /**/
 }
-.menu__container__cadre {
+.menu.a-la-francaise .menu__container__cadre {
   margin: 37px 12px 83px;
   /**/
 }
-.menu__container__cadre__repas__h2--plats {
+.menu.a-la-francaise .menu__container__cadre__repas__h2--plats {
   margin-top: 43px;
   /**/
 }
-.menu__container__cadre__btn {
+.menu.a-la-francaise .menu__container__cadre__btn {
   margin-top: 50px;
   /**/
 }
 
 /*  menu 4 */
-.menu {
+.menu.le-delice-des-sens {
   height: 1417px;
   /**/
 }
-.menu__container {
+.menu.le-delice-des-sens .menu__container {
   height: 1196px;
   /**/
 }
-.menu__container__cadre {
+.menu.le-delice-des-sens .menu__container__cadre {
   margin: 37px 12px 65px;
   /**/
 }
-.menu__container__cadre__repas__h2--plats {
+.menu.le-delice-des-sens .menu__container__cadre__repas__h2--plats {
   margin-top: 37px;
   /**/
 }
-.menu__container__cadre__repas__plat--grand {
+.menu.le-delice-des-sens .menu__container__cadre__repas__plat--grand {
   height: 255px;
 }
-.menu__container__cadre__repas__plat__box--grand {
+.menu.le-delice-des-sens .menu__container__cadre__repas__plat__box--grand {
   height: 90px;
 }
-.menu__container__cadre__btn {
+.menu.le-delice-des-sens .menu__container__cadre__btn {
   margin-top: 50px;
   /**/
 }
