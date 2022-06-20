@@ -68,7 +68,6 @@ body {
 }
 
 .menu {
-    background-color: red;
     width: 100%;
     position: relative;
     &__img {
@@ -77,6 +76,7 @@ body {
         width: 100%;
     }
     &__container {
+        background-color: aqua;
         width: 100%;
         position: absolute;
         top: 220px;
@@ -289,14 +289,7 @@ body {
 
 @media screen and (min-width : 550px ) {
     .menu__container__cadre { 
-        margin: auto ; /* NE MARCHE PAS !*/ 
-        /*&__haut {
-            margin: auto;
-        }
-        &__cont {
-            margin: auto;
-            width: 100%; 
-        }*/
+        margin: auto ;
     }
 }
 
@@ -317,18 +310,15 @@ body {
     .menu {
         display: flex;
         justify-content: center;
-        &__container {
-            /*height: auto; */  /* NE MARCHE PAS !*/
-            &__cadre__cont { 
-                display: flex;
-                flex-direction: row; 
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;   
-                &__repas__plat {
+        &__container__cadre__cont { 
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;   
+            &__repas__plat {
                     width: 95%;
-                }
-            }
+            }   
         }
     }
 } 
