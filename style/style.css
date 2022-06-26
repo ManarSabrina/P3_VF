@@ -680,7 +680,6 @@ main {
   /*transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: linear;*/
-  /* PK CA NE MARCHE PAS */
 }
 
 @media screen and (min-width: 1110px) {
@@ -884,7 +883,6 @@ body {
 }
 
 .menu {
-  background-color: red;
   width: 100%;
   position: relative;
 }
@@ -894,6 +892,7 @@ body {
   width: 100%;
 }
 .menu__container {
+  background-color: aqua;
   width: 100%;
   position: absolute;
   top: 220px;
@@ -983,6 +982,11 @@ body {
   /* MODIF */
   position: relative;
   overflow: hidden;
+  /* 
+                              @keyframes apparition-box {
+                              0% { z-index: -1; opacity: 0; transform: translateY(10px);}
+                              100% { z-index: 3; opacity: 1; transform: translateY(0px);}
+  } */
 }
 .menu__container__cadre__cont__repas__plat__box:hover > .menu__container__cadre__cont__repas__plat__box__texte {
   animation: translate-left-aller 1s linear;
@@ -1136,20 +1140,14 @@ body {
 @media screen and (min-width: 550px) {
   .menu__container__cadre {
     margin: auto;
-    /* NE MARCHE PAS !*/
-    /*&__haut {
-        margin: auto;
-    }
-    &__cont {
-        margin: auto;
-        width: 100%; 
-    }*/
   }
 }
 @media screen and (min-width: 1110px) {
   .menu {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .menu__container {
     width: 65%;
@@ -1162,11 +1160,13 @@ body {
 
   .menu {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px;
   }
   .menu__container {
-    /*height: auto; */
-    /* NE MARCHE PAS !*/
+    height: 575px;
   }
   .menu__container__cadre__cont {
     display: flex;
@@ -1208,31 +1208,24 @@ body {
 /*  menu 2 */
 .menu.la-note-enchantee {
   height: 1493px;
-  /**/
 }
 .menu.la-note-enchantee .menu__container {
   height: 1272px;
-  /**/
 }
 .menu.la-note-enchantee .menu__container__cadre {
   margin: 37px 12px 72px;
-  /**/
 }
 .menu.la-note-enchantee .menu__container__cadre__repas__h2--plats {
   margin-top: 50px;
-  /**/
 }
 .menu.la-note-enchantee .menu__container__cadre__repas__plat--quatre {
-  /**/
   height: 315px;
 }
 .menu.la-note-enchantee .menu__container__cadre__repas__plat__box__texte__nometprix__nom {
   width: 85%;
-  /**/
 }
 .menu.la-note-enchantee .menu__container__cadre__btn {
   margin-top: 50px;
-  /**/
 }
 
 /*  menu 3 */
@@ -1287,4 +1280,4 @@ body {
 
 /* IMPORT */
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
