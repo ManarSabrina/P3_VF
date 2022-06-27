@@ -818,6 +818,12 @@ main {
     width: 0%;
   }
 }
+/* 
+@keyframes translate-right {
+    0%{ flex-grow: 0; }
+    100%{ flex-grow: 0.20; }
+}
+*/
 @keyframes rotate-icon {
   0% {
     transform: rotate(0deg);
@@ -827,13 +833,7 @@ main {
   }
 }
 @keyframes apparition-box {
-  0% {
-    z-index: -1;
-    opacity: 0;
-    transform: translateY(10px);
-  }
   100% {
-    z-index: 3;
     opacity: 1;
     transform: translateY(0px);
   }
@@ -982,11 +982,11 @@ body {
   /* MODIF */
   position: relative;
   overflow: hidden;
-  /* 
-                              @keyframes apparition-box {
-                              0% { z-index: -1; opacity: 0; transform: translateY(10px);}
-                              100% { z-index: 3; opacity: 1; transform: translateY(0px);}
-  } */
+  opacity: 0;
+  transform: translateY(10px);
+  animation-name: apparition-box;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .menu__container__cadre__cont__repas__plat__box:hover > .menu__container__cadre__cont__repas__plat__box__texte {
   animation: translate-left-aller 1s linear;
@@ -1008,43 +1008,33 @@ body {
 }
 .menu__container__cadre__cont__repas__plat__box-1 {
   animation-delay: 1s;
-  animation: apparition-box 1s;
 }
 .menu__container__cadre__cont__repas__plat__box-2 {
   animation-delay: 2s;
-  animation: apparition-box 2s;
 }
 .menu__container__cadre__cont__repas__plat__box-3 {
   animation-delay: 3s;
-  animation: apparition-box 3s;
 }
 .menu__container__cadre__cont__repas__plat__box-4 {
   animation-delay: 4s;
-  animation: apparition-box 4s;
 }
 .menu__container__cadre__cont__repas__plat__box-5 {
   animation-delay: 5s;
-  animation: apparition-box 5s;
 }
 .menu__container__cadre__cont__repas__plat__box-6 {
   animation-delay: 6s;
-  animation: apparition-box 6s;
 }
 .menu__container__cadre__cont__repas__plat__box-7 {
   animation-delay: 7s;
-  animation: apparition-box 7s;
 }
 .menu__container__cadre__cont__repas__plat__box-8 {
   animation-delay: 8s;
-  animation: apparition-box 8s;
 }
 .menu__container__cadre__cont__repas__plat__box-9 {
   animation-delay: 9s;
-  animation: apparition-box 9s;
 }
 .menu__container__cadre__cont__repas__plat__box-10 {
   animation-delay: 10s;
-  animation: apparition-box 10s;
 }
 .menu__container__cadre__cont__repas__plat__box__texte {
   display: flex;
@@ -1151,32 +1141,6 @@ body {
   }
   .menu__container {
     width: 65%;
-  }
-}
-@media screen and (min-width: 1610px) {
-  .main {
-    height: 700px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 800px;
-  }
-  .menu__container {
-    height: 575px;
-  }
-  .menu__container__cadre__cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .menu__container__cadre__cont__repas__plat {
-    width: 95%;
   }
 }
 /*  menu 1 */

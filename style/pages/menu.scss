@@ -13,14 +13,20 @@
     100%{ width: 0%; }
 }
 
+/* 
+@keyframes translate-right {
+    0%{ flex-grow: 0; }
+    100%{ flex-grow: 0.20; }
+}
+*/
+
 @keyframes rotate-icon {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
 @keyframes apparition-box {
-    0% { z-index: -1; opacity: 0; transform: translateY(10px);}
-    100% { z-index: 3; opacity: 1; transform: translateY(0px);}
+    100% { opacity: 1; transform: translateY(0px);}
 }
 
 
@@ -160,6 +166,11 @@ body {
                             box-shadow: 5px 5px 5px #9c9c9c; /* MODIF */
                             position: relative;
                             overflow: hidden;
+                            opacity: 0;
+                            transform: translateY(10px);
+                            animation-name: apparition-box;
+                            animation-duration: 1s;
+                            animation-fill-mode: forwards;
                             &:hover > &__texte {
                                 animation: translate-left-aller 1s linear; 
                             }
@@ -182,14 +193,9 @@ body {
                             @for $i from 1 to 11 {
                                 &-#{$i} {
                                     animation-delay: $i * 1s;
-                                    animation: apparition-box $i * 1s;
+                                   
                                 }  
                             }
-                            /* 
-                            @keyframes apparition-box {
-                            0% { z-index: -1; opacity: 0; transform: translateY(10px);}
-                            100% { z-index: 3; opacity: 1; transform: translateY(0px);}
-} */
                             &__texte {
                                 display: flex;
                                 @include fd-c;
@@ -310,28 +316,3 @@ body {
     }
 }
 
-@media screen and (min-width : 1610px ) {
-    .main {
-        height: 700px;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 800px;
-        &__container {
-            height: 575px;
-            &__cadre__cont { 
-                display: flex;
-                flex-direction: row; 
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;   
-                &__repas__plat {
-                        width: 95%;
-                }   
-            }
-        }
-    }
-} 
